@@ -3,15 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { IoLogoBuffer } from "react-icons/io5";
 import { IoMdSearch } from "react-icons/io";
+import {FaBars} from "react-icons/fa";
 
 function NavHeader({Toggle}) {
   return (
     <Navbar className="navbar navbar-expand-sm navbar-dark  bg-transparent">
       <Container>
         <Navbar.Brand href="#home" className="fw-5" onClick={Toggle}>
-          <IoLogoBuffer /> Celz
+          <FaBars/> Celz
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler d-lg-none" />
         <Navbar.Collapse id="basic-navbar-nav">
